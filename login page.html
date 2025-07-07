@@ -1,67 +1,82 @@
-<html>
-    <head>
-        <title>
-            معلوماتي
-        </title>
-        <style>
-body{
-    background-color: rgb(224, 107, 4);
-    text-align: center;
-    font-size: 30px;
-}
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>معلوماتي</title>
+    <style>
+        body {
+            background-color: rgb(94, 166, 233);
+            text-align: center;
+            font-size: 30px;
+        }
 
-h1{ 
- font-size: 80;
- color: rgb(34, 34, 214);
- padding: 2px;
- border: 25px dashed ;
- border-radius: 50%;
- border-color: black;
- }
+        h1 {
+            font-size: 80px;
+            color: rgb(34, 34, 214);
+            padding: 2px;
+            border: 25px dashed black;
+            border-radius: 50%;
+        }
 
- img{
-    width: 200;
-    height: 200;
-    border-radius: 25%;
-    border: 10px solid;
-    border-color: rgb(7, 15, 13);
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 25%;
+            border: 10px solid rgb(7, 15, 13);
+        }
 
-}
+        .box {
+            background-color: rgb(241, 191, 91);
+            border-radius: 20px;
+            border: none;
+            padding: 20px;
+            width: 400px;
+            margin: auto;
+            display: inline-block;
+        }
 
-button{
-    background-color: rgb(224, 104, 12);
-    color: aliceblue;
-    padding: 50px;
-    font-size: 40px;
-    cursor: pointer;
-    border: 10px solid;
-    background-color: black;
-}
+        input {
+            padding: 10px;
+            font-size: 20px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        label{
+            font-size: 40px;
+        }
 
-button:hover{
-    background-color: rgb(2, 41, 41);
-    border-radius: 50px;
-}
-        </style> 
-    </head>
-    <body>
-        <h1> login page </h1>
-        <img src="ddd.gif">
-        <div class="box">
-        <form action="ahmed_website.html">
-            <Label>Email....</Label>
-            <input type="email"placeholder="Enter your Email" required>
-            
-            <br>
-            <label>username</label>
-            <input type="text" placeholder="Enter your username" required>
-            <br>
-            <label>password
-            </label>
-            <input type="password"placeholder="Enter your password " required>
+        button {
+            background-color: black;
+            color: aliceblue;
+            padding: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            border: 10px solid;
+        }
+
+        button:hover {
+            background-color: rgb(2, 41, 41);
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>login page</h1>
+    <img src="كرستيانو.jpg" alt="صورة متحركة">
 <br>
-<input type="submit" value="OK">
+    <div class="box">
+        <form action="ahmed_website.html">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="Enter your Email" required><br>
 
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" placeholder="Enter your username" required><br>
 
-    </body>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" placeholder="Enter your password" required><br><br>
+
+            <button type="submit">OK</button>
+        </form>
+    </div>
+</body>
 </html>
